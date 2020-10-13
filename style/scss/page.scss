@@ -3,30 +3,34 @@
 header{
     position: sticky;
     top: 0;
-    
+    z-index: 2;
+
     .header-top{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px;
-        
+        position: absolute;
+        width: 100%;
         
         p{
             font-family: 'Open Sans', sans-serif;
             font-size:16px;
+            color: white;
+            margin-top: 32px;
+            margin-left: 20px;
             
             span{
-                @include fonts(800,22px,normal);
+                @include fonts(600,22px,white);
     
                 &:nth-of-type(2){
-                    @include fonts(normal,18px,normal);
+                    @include fonts(normal,18px,white);
                 }
             }
         }
     
         [data-menu="button"]{
             display: flex;
-            background: black;
+            background: rgba(255, 255, 255, 0.15);
             border: none;
             padding: 20px 15px;
             border-radius: 50%;
@@ -34,15 +38,65 @@ header{
             cursor: pointer;
             align-items: center;
             position: relative;
+            margin-top: 28px;
+            margin-right: 24px;
     
             &::before{
                 content: '';
                 display: inline-block;
-                height: 2px;
+                height: 3px;
                 width: 13px;
                 background: white;
                 box-shadow: 0 4px white, 0 -4px white;
             }
+
+            &:focus{
+                outline: none;
+            }
+
+            &:hover{
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                background: transparent;
+            }
         }
+    }
+}
+
+.part-one{
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    background-image: url(../../assets/IMG/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+
+    ::before{
+    content: '';
+    display: block;
+    background-color: #000;
+    height: 100vh;
+    left: 0;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    cursor: auto;
+    }
+
+    h1{
+        position: relative;
+        padding-top: 400px;
+        font-size: 7em;
+        line-height: 1.1;
+        font-family: 'Lobster', cursive;
+        margin-bottom: .25em;
+        color: rgba(255, 255, 255, 0.75);
+        text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
+        text-transform: none; 
+        z-index: 2;  
     }
 }
