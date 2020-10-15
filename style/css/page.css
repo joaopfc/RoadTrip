@@ -58,7 +58,7 @@ img {
 header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 header .header-top {
   display: flex;
@@ -123,31 +123,31 @@ header .header-top [data-menu=button]:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
-}
-.part-one ::before {
-  content: "";
-  display: block;
-  background-color: #000;
-  height: 100vh;
-  left: 0;
-  opacity: 0.25;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  cursor: auto;
+  position: relative;
+  filter: brightness(60%);
+  z-index: 2;
 }
 .part-one h1 {
-  position: relative;
-  padding-top: 400px;
-  font-size: 7em;
+  padding-top: 25rem;
+  font-size: 7.5em;
+  font-weight: 700;
   line-height: 1.1;
   font-family: "Lobster", cursive;
   margin-bottom: 0.25em;
-  color: rgba(255, 255, 255, 0.75);
+  color: white;
   text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
   text-transform: none;
-  z-index: 2;
+  filter: brightness(100%);
+}
+.part-one .seta {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 20px 15px;
+  border-radius: 50%;
+  color: white;
 }
 
 /*# sourceMappingURL=page.css.map */
