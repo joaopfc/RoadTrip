@@ -127,6 +127,14 @@ header .header-top [data-menu=button]:hover {
   filter: brightness(60%);
   z-index: 2;
 }
+.part-one .teste {
+  z-index: 12222;
+  width: 500px;
+  height: 600px;
+  background: white;
+  position: relative;
+  filter: none;
+}
 .part-one h1 {
   padding-top: 25rem;
   font-size: 7.5em;
@@ -148,6 +156,10 @@ header .header-top [data-menu=button]:hover {
   padding: 20px 15px;
   border-radius: 50%;
   color: white;
+}
+
+:not(.seta) {
+  color: yellow;
 }
 
 /*# sourceMappingURL=page.css.map */

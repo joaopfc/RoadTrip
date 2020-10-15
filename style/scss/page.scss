@@ -62,7 +62,7 @@ header{
     }
 }
 
-.part-one{
+.part-one {
     width: 100%;
     min-height: 100vh;
     height: 100vh;
@@ -75,6 +75,24 @@ header{
     position: relative;
     filter: brightness(60%);
     z-index: 2;
+
+    // .bg-filter{
+    //     filter: brightness(60%);
+    // }
+
+    // :not(h1){
+    //     filter: brightness(60%);
+    // }
+    
+    
+    .teste{
+        z-index: 12222;
+        width: 500px;
+        height: 600px;
+        background: white;
+        position: relative;
+        filter: none;
+    }
 
     h1{
         padding-top: 25rem;
@@ -98,5 +116,10 @@ header{
         padding: 20px 15px;
         border-radius: 50%;
         color: white;
+        
     }
 }
+
+:not(.seta){
+        color: yellow;
+    }
