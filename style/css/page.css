@@ -113,7 +113,7 @@ header .header-top [data-menu=button]:hover {
   background: transparent;
 }
 
-.part-one {
+.merda {
   width: 100%;
   min-height: 100vh;
   height: 100vh;
@@ -124,17 +124,12 @@ header .header-top [data-menu=button]:hover {
   background-attachment: fixed;
   text-align: center;
   position: relative;
-  filter: brightness(60%);
   z-index: 2;
 }
-.part-one .teste {
-  z-index: 12222;
-  width: 500px;
-  height: 600px;
-  background: white;
-  position: relative;
-  filter: none;
+.merda :not(.merdinhas) {
+  filter: brightness(60%);
 }
+
 .part-one h1 {
   padding-top: 25rem;
   font-size: 7.5em;
@@ -145,21 +140,16 @@ header .header-top [data-menu=button]:hover {
   color: white;
   text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
   text-transform: none;
-  filter: brightness(100%);
 }
 .part-one .seta {
   cursor: pointer;
-  position: relative;
+  position: absolute;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.15);
   border: none;
   padding: 20px 15px;
   border-radius: 50%;
   color: white;
-}
-
-:not(.seta) {
-  color: yellow;
 }
 
 /*# sourceMappingURL=page.css.map */
